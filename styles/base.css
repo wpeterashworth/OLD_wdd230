@@ -73,6 +73,7 @@ h3 {
     border-style: outset;
     font-family: Montserrat, "Open Sans";
     grid-column: 2/5;
+    margin: 10px;
 }
 
 footer {
