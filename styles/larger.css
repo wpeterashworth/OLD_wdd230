@@ -1,0 +1,34 @@
+@media screen and (min-width: 950px) {
+
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    header,
+    main,
+    nav,
+    footer {
+        grid-column: 2/5;
+    }
+
+    img {
+        float: left;
+        padding: 50px 25px 50px 100px;
+    }
+
+    h1 {
+        padding: 100px;
+    }
+}

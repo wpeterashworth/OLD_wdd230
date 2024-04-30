@@ -1,34 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Open+Sans:wght@300&display=swap');
-/* colors: rgba(37, 37, 226, 0.7), rgb(238, 187, 92), rgb(31, 196, 218) */
+/* colors: charcoal: 28536B   Rosy Brown: C2948A    Air superiority Blue: 7EA8BE    Isabelline: F6F0ED   Khaki: BBB193 */
+
+/* :root {
+    --background-color: #F6F0ED --header-color: #7EA8BE --accent-color: #28536B --accent-color2: #BBB193;
+} */
 
 body {
     margin: 0;
     padding: 0;
+}
+
+#content {
     text-align: center;
-    background-color: lightgrey;
+    background-color: #F6F0ED;
 }
 
 header {
-    background-color: rgba(37, 37, 226, 0.7);
+    background-color: #7EA8BE;
     text-align: center;
+    border-style: ridge;
+    border-width: .75em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
 
 nav {
-    background-color: rgb(238, 187, 92);
+    background-color: #BBB193;
     border-style: solid;
+    border-color: #28536B;
     border-width: .4em;
 }
 
+nav ul {
+    padding-inline-start: 0px;
+}
+
+ul,
 li,
 a {
     padding: 10px;
+    font-family: Montserrat, "Open Sans";
 }
 
 img,
 h1 {
     margin: 0 auto;
-    display: block;
     padding: 10px;
+}
+
+h1 {
+    padding-top: 60px;
 }
 
 nav,
@@ -44,11 +65,11 @@ a {
 
 nav,
 a:hover {
-    color: rgb(31, 196, 218);
+    color: #7EA8BE;
 }
 
 h1 {
-    font-family: Montserrat, "Open Sans";
+    font-family: Karla, "Open Sans";
 }
 
 .card,
@@ -58,16 +79,17 @@ ul {
 
 h2 {
     padding-top: 25px;
-    font-family: Montserrat, "Open Sans";
+    font-family: Karla, "Open Sans";
 }
 
 h3 {
-    background-color: rgba(37, 37, 226, 0.7);
-    font-family: Montserrat, "Open Sans";
+    background-color: #7EA8BE;
+    font-family: Karla, "Open Sans";
 }
 
 .card {
     border-style: outset;
+    border-width: .25em;
     font-family: Montserrat, "Open Sans";
     margin: 10px;
     padding: 10px;
@@ -75,36 +97,13 @@ h3 {
 
 footer {
     border-style: outset;
-    background-color: rgba(37, 37, 226, 0.7);
+    background-color: #7EA8BE;
     font-size: 1.15em;
     font-family: Montserrat, "Open Sans";
     padding: 10px;
+    border-width: .25em;
 }
 
 hr {
     margin: 20px;
-}
-
-@media screen and (min-width: 650px) {
-
-    body {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    header,
-    main,
-    nav,
-    footer {
-        grid-column: 2/5;
-    }
-
-    img {
-        float: left;
-        padding: 50px 25px 50px 100px;
-    }
-
-    h1 {
-        padding: 100px;
-    }
 }
