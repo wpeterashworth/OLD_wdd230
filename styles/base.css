@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&family=Open+Sans:wght@300&display=swap');
 /* colors: charcoal: 28536B   Rosy Brown: C2948A    Air superiority Blue: 7EA8BE    Isabelline: F6F0ED   Khaki: BBB193 */
 
-/* :root {
-    --background-color: #F6F0ED --header-color: #7EA8BE --accent-color: #28536B --accent-color2: #BBB193;
-} */
+:root {
+    --background-color: #F6F0ED;
+    --header-color: #7EA8BE;
+    --accent-color: #28536B;
+    --accent-color2: #BBB193;
+}
 
 body {
     margin: 0;
