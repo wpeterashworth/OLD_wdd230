@@ -40,4 +40,8 @@
         padding: 0px;
         font-size: 1em;
     }
+
+    li {
+        padding: 5px;
+    }
 }
