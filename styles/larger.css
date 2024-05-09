@@ -1,4 +1,4 @@
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 950px) {
 
 
     body {
@@ -29,7 +29,7 @@
 
     img {
         float: left;
-        padding: 50px 25px 50px 100px;
+        padding: 50px 25px 50px 50px;
     }
 
     nav ul {
