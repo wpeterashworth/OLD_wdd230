@@ -73,3 +73,9 @@ a {
 a:hover {
     color: var(--background-color2);
 }
+
+img {
+    height: auto;
+    width: auto;
+    object-fit: cover;
+}

@@ -16,6 +16,10 @@
         grid-template-columns: 1fr 3fr;
     }
 
+    h1 {
+        padding-top: 100px;
+    }
+
     header,
     main,
     nav,
@@ -34,6 +38,14 @@
         justify-content: space-around;
     }
 
+    nav ul.open {
+        flex-direction: row;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
     ul,
     li,
     a {
@@ -43,5 +55,9 @@
 
     li {
         padding: 5px;
+    }
+
+    iframe {
+        grid-column: 2/5;
     }
 }
