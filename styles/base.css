@@ -101,6 +101,10 @@ a {
 
 }
 
+.active a:hover {
+    color: black;
+}
+
 nav,
 a:hover {
     color: #7EA8BE;
@@ -149,4 +153,5 @@ hr {
 iframe {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
 }
