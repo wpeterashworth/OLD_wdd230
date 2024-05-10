@@ -25,6 +25,11 @@ footer {
     border: inset;
 }
 
+footer p {
+    padding: 0px;
+    text-indent: 0px;
+}
+
 nav ul {
     list-style: none;
     display: flex;
