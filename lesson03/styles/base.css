@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --background-color: #E0DFD5;
+    --header-color: #C6D8D3;
+    --accent-color: #F06543;
+    --accent-color2: #F09D51;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+#content {
+    font-family: Nunito, Inter, sans-serif;
+}
+
+header,
+footer {
+    background-color: var(--header-color);
+    text-align: center;
+    padding: 10px;
+    border: inset;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0px;
+    padding-top: 10px;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: var(--accent-color2);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+nav {
+    padding-bottom: 15px;
+    border: inset;
+    border-radius: 10px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.active a:hover {
+    color: var(--text-color);
+}
+
+p {
+    padding-left: 15px;
+    padding-right: 10px;
+    text-indent: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.site-purpose,
+.scenarios {
+    border-radius: 20px;
+    border-style: outset;
+}
+
+.typography {
+    text-align: center;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.background {
+    background-color: var(--background-color);
+}
+
+.header {
+    background-color: var(--header-color);
+}
+
+.accent-one {
+    background-color: var(--accent-color);
+}
+
+.accent-two {
+    background-color: var(--accent-color2);
+}
