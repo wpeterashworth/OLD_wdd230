@@ -37,10 +37,16 @@ footer p {
 
 nav ul {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding-inline-start: 0px;
     padding-top: 10px;
+}
+
+nav ul.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -75,57 +81,34 @@ nav {
     color: white;
 }
 
-p {
-    padding-left: 15px;
-    padding-right: 10px;
-    text-indent: 15px;
-}
-
-h2 {
-    text-align: center;
-}
-
-.border-section {
-    border-radius: 20px;
-    border-style: outset;
-    border-width: 5px;
-    border-color: var(--header-color);
-}
-
-.typography {
-    text-align: center;
-}
-
-.colors {
-    width: 100%;
-    min-width: 350px;
-    margin: 30px auto;
-    text-align: center;
-}
-
-.colors th {
-    background-color: var(--background-color);
-}
-
-.colors td {
-    width: 25%;
-    height: 3em;
-}
-
-.background {
-    background-color: var(--background-color);
-    border-style: solid;
-}
-
-.header {
-    background-color: var(--header-color);
-}
-
-.accent {
-    background-color: var(--accent-color);
-}
-
-.accent-two {
+#menu-button {
+    cursor: pointer;
     background-color: var(--accent-color2);
-    color: var(--background-color);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+}
+
+#menu-button:hover {
+    background-color: var(--accent-color);
+    color: black;
+}
+
+#menu-button::before {
+    content: "Open";
+}
+
+#menu-button.open::before {
+    content: "Close";
+}
+
+#hero-image {
+    display: flex;
+    width: clamp(300px, 100%, 100%);
+    max-height: 400px;
+}
+
+main {
+    display: grid;
 }

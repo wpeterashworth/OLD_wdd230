@@ -1,0 +1,11 @@
+@media screen and (min-width: 550px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #menu-button {
+        display: none;
+    }
+}
