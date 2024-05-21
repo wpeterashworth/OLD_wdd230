@@ -27,6 +27,8 @@ footer {
     text-align: center;
     padding: 10px;
     border: inset;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 footer p {
@@ -103,12 +105,52 @@ nav {
     content: "Close";
 }
 
-#hero-image {
-    display: flex;
-    width: clamp(300px, 100%, 100%);
-    max-height: 400px;
+main {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: repeat(4, 1fr);
 }
 
-main {
-    display: grid;
+#icon {
+    width: 25px;
+    height: 25px;
+}
+
+#currentEvents,
+#weatherCard,
+#adverts {
+    background-color: var(--accent-color);
+    padding: 50px;
+    border-style: outset;
+    grid-column: 2;
+}
+
+#currentEvents {
+    grid-row: 2;
+}
+
+#weatherCard {
+    grid-row: 3;
+}
+
+#adverts {
+    grid-row: 4;
+}
+
+.container {
+    grid-column: 2;
+}
+
+main a {
+    background-image: url("chamber/#hero-image");
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hero-image {
+    width: 100%;
+    z-index: -1;
 }
