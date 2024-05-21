@@ -11,10 +11,10 @@
 
     main {
         grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: 1fr 40% 40% 1fr;
+        grid-template-columns: 1fr 35% 35% 1fr;
     }
 
-    .container {
+    .hero {
         grid-column: 2/4;
     }
 

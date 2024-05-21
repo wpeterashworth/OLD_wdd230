@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --background-color: #F5F1E3;
-    --header-color: #99C1B9;
-    --accent-color: #EAEFB1;
-    --accent-color2: #284B63;
+    --background-color: #A3C4BC;
+    --header-color: #7EA8BE;
+    --accent-color: #28536B;
+    --accent-color2: white;
 }
 
 body {
@@ -27,7 +27,7 @@ footer {
     text-align: center;
     padding: 10px;
     border: inset;
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -62,7 +62,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent-color);
+    color: var(--header-color);
     transition: 0.15s;
     cursor: pointer;
 }
@@ -71,7 +71,7 @@ nav {
     padding-bottom: 15px;
     border: inset;
     border-radius: 10px;
-    background-color: var(--accent-color2);
+    background-color: var(--accent-color);
 }
 
 .active {
@@ -85,7 +85,7 @@ nav {
 
 #menu-button {
     cursor: pointer;
-    background-color: var(--accent-color2);
+    background-color: var(--accent-color);
     border: none;
     color: white;
     padding: 12px 16px;
@@ -93,7 +93,7 @@ nav {
 }
 
 #menu-button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--background-color);
     color: black;
 }
 
@@ -108,8 +108,9 @@ nav {
 main {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 80% 1fr;
+    grid-template-columns: 1fr 70% 1fr;
     grid-template-rows: repeat(4, 1fr);
+    color: var(--accent-color2);
 }
 
 #icon {
@@ -121,7 +122,6 @@ main {
 #weatherCard,
 #adverts {
     background-color: var(--accent-color);
-    padding: 50px;
     border-style: outset;
     grid-column: 2;
 }
@@ -138,19 +138,28 @@ main {
     grid-row: 4;
 }
 
-.container {
+.hero {
     grid-column: 2;
+    position: relative;
 }
 
-main a {
-    background-image: url("chamber/#hero-image");
+main button {
     padding: 20px;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    background-color: var(--header-color);
+    font-weight: bold;
+    font-family: Nunito, sans-serif;
+    position: absolute;
+    left: 50px;
+    top: 25px;
+    opacity: 0.75;
+}
+
+main button:hover {
+    background-color: var(--accent-color);
 }
 
 #hero-image {
     width: 100%;
-    z-index: -1;
+    aspect-ratio: 15/5;
 }
