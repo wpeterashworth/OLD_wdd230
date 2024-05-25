@@ -49,7 +49,7 @@
     }
 
     #subfooter {
-        grid-row: 3;
+        grid-row: 4;
         grid-column: 4/6;
         border-style: ridge;
         border-radius: 150px;
@@ -57,5 +57,9 @@
         padding-bottom: 25px;
         padding-top: 100px;
         margin-right: 25px;
+    }
+
+    .spotlight-heading {
+        grid-column: 1/4;
     }
 }
