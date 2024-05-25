@@ -4,7 +4,8 @@
     --background-color: #A3C4BC;
     --header-color: #7EA8BE;
     --accent-color: #28536B;
-    --accent-color2: white;
+    --text-color1: black;
+    --text-color2: white;
 }
 
 body {
@@ -27,8 +28,9 @@ footer {
     text-align: center;
     padding: 10px;
     border: inset;
-    max-width: 70%;
+    max-width: 72.5%;
     margin: 0 auto;
+    color: var(--text-color1);
 }
 
 footer p {
@@ -53,18 +55,17 @@ nav ul.open {
 
 nav ul li {
     padding: 5px;
+    background-color: var(--accent-color);
+    transition: 0.15s;
+    cursor: pointer;
 }
+
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color2);
     font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--header-color);
-    transition: 0.15s;
-    cursor: pointer;
+    display: block;
 }
 
 nav {
@@ -74,27 +75,39 @@ nav {
     background-color: var(--accent-color);
 }
 
+nav li:hover {
+    background-color: var(--header-color);
+}
+
+nav a:hover {
+    color: var(--text-color1);
+}
+
 .active {
     text-decoration: underline;
-    color: white;
+    color: var(--text-color2);
 }
 
 .active a:hover {
-    color: white;
+    color: var(--text-color2)
+}
+
+nav ul .active:hover {
+    background-color: var(--accent-color);
 }
 
 #menu-button {
     cursor: pointer;
     background-color: var(--accent-color);
     border: none;
-    color: white;
+    color: var(--text-color2);
     padding: 12px 16px;
     font-size: 16px;
 }
 
 #menu-button:hover {
     background-color: var(--background-color);
-    color: black;
+    color: var(--text-color1);
 }
 
 #menu-button::before {
@@ -108,22 +121,23 @@ nav {
 main {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 70% 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    color: var(--accent-color2);
+    grid-template-columns: 1fr 25% 25% 25% 1fr;
+    grid-template-rows: 1fr 25% 1fr 1fr 15%;
+    color: var(--text-color2);
 }
 
 #icon {
-    width: 25px;
-    height: 25px;
+    width: 65px;
+    height: 65px;
 }
 
 #currentEvents,
-#weatherCard,
-#adverts {
+#weatherCard {
     background-color: var(--accent-color);
     border-style: outset;
-    grid-column: 2;
+    grid-column: 2/5;
+    padding: 30px;
+    margin-bottom: 30px;
 }
 
 #currentEvents {
@@ -134,32 +148,92 @@ main {
     grid-row: 3;
 }
 
-#adverts {
+.spotlight {
+    border-style: ridge;
+    padding: 5px;
+    background-color: var(--accent-color);
+    grid-column: 2/5;
+    grid-row: 5;
+    margin-bottom: 30px;
+}
+
+.heading {
+    color: var(--text-color1);
+    padding: 20px;
+}
+
+.spotlight1,
+.spotlight2,
+.spotlight3 {
     grid-row: 4;
 }
 
-.hero {
+.spotlight1 {
     grid-column: 2;
+}
+
+.spotlight2 {
+    grid-column: 3;
+}
+
+.spotlight3 {
+    grid-column: 4;
+}
+
+.hero {
+    grid-column: 2/5;
     position: relative;
 }
 
 main button {
-    padding: 20px;
-    color: black;
-    background-color: var(--header-color);
+    padding: 7px;
+    color: var(--text-color1);
+    background-color: var(--background-color);
     font-weight: bold;
     font-family: Nunito, sans-serif;
     position: absolute;
     left: 50px;
-    top: 25px;
+    top: 75px;
     opacity: 0.75;
+    border-radius: 10px;
 }
 
 main button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--header-color);
 }
 
 #hero-image {
     width: 100%;
-    aspect-ratio: 15/5;
+    aspect-ratio: 15/7;
+    margin-top: 7px;
+}
+
+#darkMode {
+    position: absolute;
+    top: 16px;
+    right: 10px;
+}
+
+#darkMode::before {
+    content: "Dark"
+}
+
+#darkMode.dark::before {
+    content: "Light"
+}
+
+.weather-icon {
+    max-width: 100px;
+}
+
+#subfooter {
+    grid-row: 5;
+    grid-column: 2/5;
+    color: var(--text-color1);
+    font-weight: bold;
+}
+
+.jedi-temple-image,
+.market-image {
+    max-width: 100px;
 }

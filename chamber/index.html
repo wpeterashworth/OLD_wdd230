@@ -10,19 +10,19 @@
     <meta property="og:type" content="School Project">
     <meta property="og:image" content="https://wpeterashworth.github.io/wdd230/images/hometown-photo.jpeg">
     <meta property="og:url" content="https://wpeterashworth.github.io/wdd230/chamber/index.html">
-    <link rel="icon" href="images/favicon3.ico">
+    <link rel="icon" href="images/favicon4.svg">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="../scripts/getdates.js" defer></script>
-    <script src="../scripts/hamburger.js" defer></script>
+    <script src="scripts/header-footer.js" defer></script>
     <title>Coruscant Chamber of Commerce</title>
 </head>
 
 <body>
     <div id="content">
         <header>
+            <button id="darkMode"></button>
             <h1>Coruscant Galactic City Chamber of Commerce</h1>
             <button id="menu-button"> Menu</button>
             <nav id="navMenu">
@@ -43,28 +43,55 @@
                 <img id="hero-image" src="images/coruscant-hero4.jpeg" alt="Picture of Galactic City in Coruscant">
                 <!-- <p>Picture credit: Star Wars Fandom Wookiepedia</p> -->
                 <button a href="">Join the Chamber</button>
+                <h2 class="heading">Chamber Info</h2>
+                <hr>
             </div>
             <section id="currentEvents">
                 <h2>Current Events</h2>
-                <p>Event 1</p>
-                <p>Event 2</p>
+                <div class="event1">
+                    <p>Battle of Coruscant</p>
+                    <p>Help the Jedi fight Count Dooku and General Greivous during a crucial time and battle in the
+                        clone wars!</p>
+                </div>
+                <div class="event2">
+                    <p>Jedi Temple Invasion</p>
+                    <p>Help stop Anakin Skywalker, now known as Darth Vader, from attacking the jedi temple! (Note: Keep
+                        in mind that you unfortunately will not win. He has the entire traitorous clone army on his
+                        side.)
+                    </p>
+                </div>
             </section>
             <section id="weatherCard">
                 <h2>Weather</h2>
-                <p>Windy</p>
+                <img class="weather-icon" src="images/weather-placeholder.webp" alt="weather icon placeholder">
+                <p>Current Conditions: Sunny</p>
+                <p>Temperature: 60°F</p>
             </section>
-            <section id="adverts">
-                <h2>Company Spotlights</h2>
-                <p>Jedi Inc.</p>
-            </section>
+            <div class="spotlight spotlight1">
+                <p>Galactic Trading Market</p>
+                <p>Visit the Galactic City and find everything you need at the market!</p>
+                <img class="market-image" src="images/coruscant-event2-img.webp" alt="Coruscant market logo image">
+            </div>
+            <div class="spotlight spotlight2">
+                <p>Jedi Training</p>
+                <p>Take your youngling to the jedi temple today!</p>
+                <img class="jedi-temple-image" src="images/jedi-temple.webp" alt="jedi temple of coruscant">
+            </div>
+            <div class="spotlight spotlight3">
+                <p>CyberDyne Droid Manufacturing Inc.</p>
+                <p>Find all your droid building needs right here in plain sight! (Just don't tell the jedi council!)</p>
+            </div>
+            <div id="subfooter">
+                <img id="icon" src="images/favicon4.svg" alt="icon">
+                <p>Galactic City Chamber || Peter Ashworth || WDD230</p>
+                <p>SkyRiver Galaxy, Core Worlds Region, Core of Coruscant</p>
+                <p>Contact: ash21003@byui.edu</p>
+            </div>
         </main>
         <footer>
-            <img id="icon" src="images/favicon3.ico" alt="icon">
             <p>Last Modified:</p>
             <p id="lastModified"></p>
-            <p>Galactic City Chamber || Peter Ashworth || WDD230</p>
-            <p>SkyRiver Galaxy, Core Worlds Region, Core of Coruscant</p>
-            <p>Contact: ash21003@byui.edu</p>
+            <p>BYU-Idaho School Project</p>
             <p id="date"></p>
         </footer>
     </div>

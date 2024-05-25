@@ -1,4 +1,10 @@
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 800px) {
+    nav ul.open {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     nav ul {
         display: flex;
         flex-direction: row;
@@ -11,21 +17,61 @@
 
     main {
         grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: 1fr 35% 35% 1fr;
+        grid-template-columns: 1fr 25% 25% 25% 1fr;
     }
 
     .hero {
-        grid-column: 2/4;
+        grid-column: 2/5;
+    }
+
+    #hero-image {
+        aspect-ratio: 15/6;
     }
 
     #weatherCard {
-        grid-column: 3;
+        grid-column: 4/6;
         grid-row: 2;
+        margin: 35px;
+        margin-bottom: 7px;
+        padding: 20px;
     }
 
-    #adverts {
+    #currentEvents {
+        grid-column: 1/4;
+        margin: 35px;
+        padding: 20px;
+    }
+
+    #darkMode {
+        top: 22px;
+        right: 62px;
+    }
+
+    main button {
+        padding: 20px;
+    }
+
+    .spotlight1,
+    .spotlight2,
+    .spotlight3 {
+        border-style: ridge;
         grid-row: 3;
-        grid-column: 2/4;
+        margin: 10px;
+        margin-top: 35px;
+        margin-bottom: 35px;
     }
 
+    header,
+    footer {
+        max-width: 90%;
+    }
+
+    #subfooter {
+        padding: 20px;
+    }
+
+    .jedi-temple-image,
+    .market-image {
+        max-width: 150px;
+    }
 }
