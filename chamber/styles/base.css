@@ -227,9 +227,12 @@ main button:hover {
     font-weight: bold;
 }
 
-.jedi-temple-image,
 .market-image {
     max-width: 100px;
+}
+
+.jedi-temple-image {
+    max-width: 150px;
 }
 
 .spotlight-heading {
