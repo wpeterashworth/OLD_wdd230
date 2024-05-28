@@ -181,8 +181,8 @@ nav ul .active:hover {
 
 main button {
     padding: 7px;
-    color: var(--text-color1);
-    background-color: var(--background-color);
+    color: black;
+    background-color: #A3C4BC;
     font-weight: bold;
     font-family: Nunito, sans-serif;
     position: absolute;
@@ -193,7 +193,7 @@ main button {
 }
 
 main button:hover {
-    background-color: var(--header-color);
+    background-color: #7EA8BE;
 }
 
 #hero-image {

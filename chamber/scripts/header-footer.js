@@ -23,7 +23,7 @@ darkButton.addEventListener('click', () => {
     if (darkButton.classList.contains("dark")) {
         document.documentElement.style.setProperty('--text-color1', 'white');
         document.documentElement.style.setProperty('--text-color2', 'black')
-        document.documentElement.style.setProperty('--background-color', 'grey');
+        document.documentElement.style.setProperty('--background-color', '#315659');
         document.documentElement.style.setProperty('--accent-color', '#7EA8BE');
         document.documentElement.style.setProperty('--header-color', '#28536B');
     }
