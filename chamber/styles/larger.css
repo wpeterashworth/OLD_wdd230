@@ -8,10 +8,6 @@
         grid-template-columns: repeat(5, 1fr);
     }
 
-    #hero-image {
-        aspect-ratio: 15/5;
-    }
-
     .hero {
         grid-column: 1/6;
         margin-left: 50px;

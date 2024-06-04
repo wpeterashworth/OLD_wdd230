@@ -147,3 +147,25 @@ iframe {
     margin: 0 auto;
     max-width: 100%;
 }
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+#overlay {
+    padding: 7px;
+    color: black;
+    background-color: var(--header-color);
+    font-weight: bold;
+    position: absolute;
+    border-style: solid;
+    border-width: 2px;
+    left: 20px;
+    top: 75px;
+    opacity: 0.75;
+    border-radius: 10px;
+}

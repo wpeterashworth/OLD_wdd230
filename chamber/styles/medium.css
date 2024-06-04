@@ -24,10 +24,6 @@
         grid-column: 2/5;
     }
 
-    #hero-image {
-        aspect-ratio: 15/6;
-    }
-
     #weatherCard {
         grid-column: 4/6;
         grid-row: 2;

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
 </head>
 
 <body>
@@ -40,6 +41,18 @@
             </ul>
         </nav>
         <main>
+            <div class="hero">
+                <picture id="temple-image">
+                    <source media="(min-width: 800px)" srcset="images/temple-hero-landscape.webp">
+                    <source media="(min-width: 400px)" srcset="images/temple-hero-mobile.webp">
+                    <img src="images/temple-hero.webp" alt="picture of Oakland Temple">
+                </picture>
+                <div id="overlay">
+                    <p>
+                        Oakland Temple
+                    </p>
+                </div>
+            </div>
             <h2>WDD 230: Web Frontend Development I</h2>
             <hr>
             <section class="card">
@@ -58,12 +71,16 @@
                     <li><a href="https://codepen.io/wpeterashworth/pen/oNRgKEx">CSS Pseudo Classes Codepen</a></li>
                     <li>Week 5:</li>
                     <li><a href="lesson05/bom.html">Book of Mormon Favorite Chapters JS</a></li>
+                    <li>Week 6:</li>
+                    <li><a href="lesson06/images/castle.webp">WebP Image</a></li>
+                    <li>Week 7:</li>
+                    <li><a href="lesson07/lazyload.htmlLazy">Lazy Loading Example</a></li>
                 </ul>
             </section>
             <section class="card">
                 <h3>Information</h3>
-                <p>Weather: Placeholder</p>
-                <p>Number of Visits: Placeholder</p>
+                <p>Weather: <span id="weather">Placeholder</span></p>
+                <p>Number of Visits: <span id="visits">Placeholder</span></p>
                 <p>Location: Rexburg Idaho</p>
                 <p>Hometown: Clayton, CA</p>
             </section>

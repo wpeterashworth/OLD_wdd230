@@ -8,4 +8,9 @@
         padding-left: 0px;
     }
 
+    #temple-image {
+        margin: 0 auto;
+        display: flex;
+    }
+
 }

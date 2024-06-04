@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
     <title>Coruscant Chamber of Commerce</title>
 </head>
 
@@ -40,7 +41,13 @@
         </header>
         <main>
             <div class="hero">
-                <img id="hero-image" src="images/coruscant-hero4.jpeg" alt="Picture of Galactic City in Coruscant">
+                <picture>
+                    <!-- <source media="(min-width: 1200px)" srcset="images/coruscant-hero-large.webp">
+                    <source media="(min-width: 800px)" srcset="images/coruscant-hero-medium.webp">
+                    <source media="(max-width: 800px)" srcset="images/coruscant-hero-small.webp"> -->
+                    <img id="hero-image" src="images/coruscant-hero-large.webp"
+                        alt="Picture of Galactic City in Coruscant">
+                </picture>
                 <!-- <p>Picture credit: Star Wars Fandom Wookiepedia</p> -->
                 <button onClick="location.href='#'">Join the Chamber</button>
                 <h2 class="heading">Chamber Info</h2>
@@ -64,8 +71,10 @@
             <section id="weatherCard">
                 <h2>Weather</h2>
                 <img class="weather-icon" src="images/weather-placeholder.webp" alt="weather icon placeholder">
-                <p>Current Conditions: Sunny</p>
-                <p>Temperature: 60°F</p>
+                <p>Current Conditions: <span id="currentConditions"></span></p>
+                <p>Temperature: <span id="temperature">40</span>&deg;F</p>
+                <p>Current Wind: <span id="windspeed">4</span>MPH</p>
+                <p>Windchill: <span id="windchill"></span></p>
             </section>
             <h2 class="spotlight-heading">Company Spotlights</h2>
             <div class="spotlight spotlight1">
