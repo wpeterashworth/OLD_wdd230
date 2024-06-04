@@ -14,7 +14,7 @@ body {
     background-color: var(--background-color);
 }
 
-main {
+#main-home {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 25% 25% 25% 1fr;
@@ -179,7 +179,7 @@ nav ul .active:hover {
     position: relative;
 }
 
-main button {
+#main-home button {
     padding: 7px;
     color: black;
     background-color: #A3C4BC;
@@ -192,7 +192,7 @@ main button {
     border-radius: 10px;
 }
 
-main button:hover {
+#main-home button:hover {
     background-color: #7EA8BE;
 }
 
@@ -238,4 +238,12 @@ main button:hover {
     color: var(--text-color1);
     grid-row: 4;
     grid-column: 2/5;
+}
+
+.discover-image img {
+    transition: 2s;
+}
+
+.discover-image img:hover {
+    box-shadow: 0 0 50px #333;
 }

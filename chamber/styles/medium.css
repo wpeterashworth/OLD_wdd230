@@ -15,7 +15,7 @@
         display: none;
     }
 
-    main {
+    #main-home {
         grid-template-rows: 1fr 1fr 5% 1fr;
         grid-template-columns: 1fr 25% 25% 25% 1fr;
     }
@@ -43,7 +43,7 @@
         right: 62px;
     }
 
-    main button {
+    #main-home button {
         padding: 20px;
     }
 
