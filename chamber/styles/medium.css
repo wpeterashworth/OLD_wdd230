@@ -120,7 +120,7 @@
     .image5,
     .image6 {
         grid-column: 2;
-        padding: 25px;
+        padding: 0px;
     }
 
     .figure1 {
@@ -159,12 +159,11 @@
         grid-row: 6/8;
     }
 
-    .caption1,
-    .caption2,
-    .caption3,
-    .caption4,
-    .caption5,
-    .caption6 {
-        text-align: center;
+    figcaption {
+        padding: 25px;
+    }
+
+    img:hover {
+        box-shadow: 0 0 50px #333;
     }
 }
